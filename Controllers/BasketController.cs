@@ -41,7 +41,6 @@ namespace FlowersStore.Controllers
                 db.SaveChanges();
             }
                 return new JsonResult(new { message = "Success deleted item from basket." });
-           
         }
     }
 }

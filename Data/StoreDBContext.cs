@@ -178,13 +178,11 @@ namespace FlowersStore.Data
         public StoreDBContext(DbContextOptions<StoreDBContext> options)
            : base(options) { }
 
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //default connection
             optionsBuilder.UseSqlServer(@"Data Source=ASHTON\ASHTON;Initial Catalog=FlowersStore;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
         }
-
     }
 }
 
