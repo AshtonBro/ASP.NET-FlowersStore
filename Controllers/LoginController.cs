@@ -107,6 +107,5 @@ namespace FlowersStore.Controllers
             await _signInManager.SignOutAsync();
             return Redirect("/Home/Index");
         }
-
     }
 }
